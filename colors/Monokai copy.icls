@@ -718,6 +718,12 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
+    <option name="HTML_TAG">
+      <value>
+        <option name="FOREGROUND" value="f8f8f2" />
+        <option name="BACKGROUND" value="272822" />
+      </value>
+    </option>
     <option name="HTML_TAG_NAME">
       <value>
         <option name="FOREGROUND" value="f92672" />
