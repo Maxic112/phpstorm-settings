@@ -1,0 +1,14 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ccab79d5-384d-46f9-9ed8-827763ed0372" name="industria.it-infinity.ru" url="http://industria.it-infinity.ru">
+        <fileTransfer host="it-infinity.ru" port="21" rootFolder="/www/industria.it-infinity.ru">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>
