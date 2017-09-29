@@ -261,6 +261,11 @@
         <option name="FOREGROUND" value="a6e22e" />
       </value>
     </option>
+    <option name="CSS.KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="f92672" />
+      </value>
+    </option>
     <option name="CSS.NUMBER">
       <value>
         <option name="FOREGROUND" value="ae81ff" />
@@ -421,7 +426,7 @@
       </value>
     </option>
     <option name="DEFAULT_IDENTIFIER" baseAttributes="TEXT" />
-    <option name="DEFAULT_INSTANCE_FIELD" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_INSTANCE_FIELD" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
     <option name="DEFAULT_INSTANCE_METHOD">
       <value>
         <option name="FOREGROUND" value="a6e22e" />
@@ -702,12 +707,6 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="HTML_CODE">
-      <value>
-        <option name="FOREGROUND" value="f8f8f2" />
-        <option name="BACKGROUND" value="272822" />
-      </value>
-    </option>
     <option name="HTML_COMMENT">
       <value>
         <option name="FOREGROUND" value="75715e" />
@@ -719,15 +718,9 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="HTML_TAG">
-      <value>
-        <option name="FOREGROUND" value="f8f8f2" />
-        <option name="BACKGROUND" value="272822" />
-      </value>
-    </option>
     <option name="HTML_TAG_NAME">
       <value>
-        <option name="FOREGROUND" value="e3e3ff" />
+        <option name="FOREGROUND" value="f92672" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
