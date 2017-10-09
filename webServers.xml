@@ -1,0 +1,14 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a24b4d6d-6828-4833-8807-18a8fa458c2e" name="zao-srk" url="http://zao-srk.ru">
+        <fileTransfer host="zao-srk.ru" port="22" rootFolder="/var/www/zaosrk/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>
