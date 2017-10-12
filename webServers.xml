@@ -17,6 +17,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="3767bf24-a699-49de-b5a1-e216344e5992" name="love-city" url="http://it-infinity.ru">
+        <fileTransfer host="it-infinity.ru" port="21" rootFolder="/www/lgorod.it-infinity.ru">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
