@@ -9,8 +9,8 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="e7f426e9-bf88-4643-b73d-bc327ffaa629" name="it-infinity-server" url="http://industria.it-infinity.ru">
-        <fileTransfer host="it-infinity.ru" port="21" rootFolder="/www/industria.it-infinity.ru">
+      <webServer id="e7f426e9-bf88-4643-b73d-bc327ffaa629" name="it-infinity-server" url="">
+        <fileTransfer host="it-infinity.ru" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
