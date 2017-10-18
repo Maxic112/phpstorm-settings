@@ -25,6 +25,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="29ed656e-b44e-4634-ba97-45bfe9042eb7" name="Gallery of Stone" url="http://gallery.it-infinity.ru">
+        <fileTransfer host="gallery.it-infinity.ru" port="21" rootFolder="/www/gallery.it-infinity.ru">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
