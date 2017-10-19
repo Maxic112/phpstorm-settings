@@ -218,10 +218,10 @@
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="$ajax" value="$.ajax({&#10;    type: 'POST',&#10;    url: '$url$',&#10;    //data: JSON.stringify(parameters),&#10;    data: '$data$',&#10;    contentType: 'application/json;',&#10;    dataType: 'json',&#10;    cache: false,    &#10;    success: function(data) {&#10;        // do something with ajax data&#10;        $end$&#10;    },&#10;    error:function (xhr, ajaxOptions, thrownError){&#10;        console.log('error...', xhr);&#10;        //error logging&#10;    },&#10;    complete: function(){&#10;        //afer ajax call is completed&#10;    } &#10;});" description="$.ajax()" toReformat="false" toShortenFQNames="true">
+  <template name="$ajax" value="$.ajax({&#10;    type: '$method$',&#10;    url: '$url$',&#10;    data: $data$,&#10;    // contentType: 'application/json;',&#10;    // dataType: 'json',&#10;    cache: false,&#10;    success: function(data) {&#10;        console.log(data);&#10;    },&#10;    error:function (xhr, ajaxOptions, thrownError){&#10;        console.log('error: ', xhr);&#10;        console.log('error: ', ajaxOptions);&#10;        console.log('error: ', thrownError);&#10;    },&#10;    complete: function(){&#10;        console.log('complete');&#10;    }&#10;});" description="$.ajax()" toReformat="false" toShortenFQNames="true">
+    <variable name="method" expression="" defaultValue="POST" alwaysStopAt="true" />
     <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="data" expression="" defaultValue="dataForPost" alwaysStopAt="true" />
     <context>
       <option name="HAML" value="false" />
       <option name="JAVA_SCRIPT" value="true" />
