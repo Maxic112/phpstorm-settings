@@ -1,0 +1,14 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="758fbee7-be04-42c9-abd5-d89e85a9e84f" name="TimeWeb (Link-share)" url="http://vh88.timeweb.ru">
+        <fileTransfer host="vh88.timeweb.ru" port="21" rootFolder="/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>
