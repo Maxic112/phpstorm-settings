@@ -1,0 +1,17 @@
+<templateSet group="PHP">
+  <template name="ecopre" value="echo &quot;&lt;pre&gt;&quot;;&#10;echo &quot;$END$&quot;;&#10;echo &quot;&lt;/pre&gt;&quot;;" description="'echo' statement" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="prr" value="echo &quot;&lt;pre&gt;&quot;;&#10;print_r($END$);&#10;echo &quot;&lt;/pre&gt;&quot;;" description="echo &quot;&lt;pre&gt;&quot;; print_r($END$); echo &quot;&lt;/pre&gt;&quot;;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="prre" value="echo &quot;&lt;pre&gt;&quot;;&#10;print_r($END$);&#10;echo &quot;&lt;/pre&gt;&quot;;&#10;exit();" description="echo &quot;&lt;pre&gt;&quot;; print_r($END$); echo &quot;&lt;/pre&gt;&quot;; exit();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
