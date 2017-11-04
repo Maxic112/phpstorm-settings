@@ -9,6 +9,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="32be7605-deb9-45b8-8b41-3abb5082da2f" name="TimeWeb Maxic112" url="http://maxic112.tmweb.ru">
+        <fileTransfer host="maxic112.tmweb.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
