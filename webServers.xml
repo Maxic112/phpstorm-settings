@@ -33,6 +33,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="0cfb362c-cae6-4261-8eb0-e6f0d3356187" name="gallery-stone.ru" url="http://gallery-stone.ru">
+        <fileTransfer host="gallery-stone.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
