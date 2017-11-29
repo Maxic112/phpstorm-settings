@@ -1,14 +1,6 @@
 <application>
   <component name="WebServers">
     <option name="servers">
-      <webServer id="a24b4d6d-6828-4833-8807-18a8fa458c2e" name="zao-srk" url="http://zao-srk.ru">
-        <fileTransfer host="zao-srk.ru" port="22" rootFolder="/var/www/zaosrk/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="e7f426e9-bf88-4643-b73d-bc327ffaa629" name="it-infinity-server" url="http://www.it-infinity.ru/">
         <fileTransfer host="it-infinity.ru" port="21">
           <advancedOptions>
@@ -41,16 +33,8 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
-      <webServer id="a0a64b47-0e2a-4a95-92af-abe6e59482f7" name="zao-srk.ru" url="http://zao-srk.ru">
-        <fileTransfer host="zao-srk.ru" port="22" rootFolder="/www/zao-srk.ru" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="eb35bc51-dc19-421b-991c-8792fe736b29" name="zao-srk.ru" url="http://zao-srk.ru">
-        <fileTransfer host="zao-srk.ru" port="21">
+        <fileTransfer host="zao-srk.ru" port="21" rootFolder="/www/zao-srk.ru">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
