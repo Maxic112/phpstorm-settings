@@ -41,6 +41,22 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="a0a64b47-0e2a-4a95-92af-abe6e59482f7" name="zao-srk.ru" url="http://zao-srk.ru">
+        <fileTransfer host="zao-srk.ru" port="22" rootFolder="/www/zao-srk.ru" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="eb35bc51-dc19-421b-991c-8792fe736b29" name="zao-srk.ru" url="http://zao-srk.ru">
+        <fileTransfer host="zao-srk.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
