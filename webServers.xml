@@ -41,6 +41,9 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="373f738d-45af-4f69-a13d-f9ec1ba47a8e" name="js-library" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\Files\Workspace\js-library" accessType="MOUNT" />
+      </webServer>
     </option>
   </component>
 </application>
