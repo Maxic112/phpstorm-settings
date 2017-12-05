@@ -44,6 +44,22 @@
       <webServer id="373f738d-45af-4f69-a13d-f9ec1ba47a8e" name="js-library" url="http://localhost">
         <fileTransfer port="0" mountedRoot="C:\Files\Workspace\js-library" accessType="MOUNT" />
       </webServer>
+      <webServer id="dda5300b-526e-4238-bcac-f86e46d99047" name="New Love-City" url="http://lgorod.its2dev.ru">
+        <fileTransfer host="lgorod.its2dev.ru" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="5b6d6ea1-f3ab-471e-8316-3736be2789d8" name="New Love-City" url="http://lgorod.its2dev.ru">
+        <fileTransfer host="lgorod.its2dev.ru" port="22" rootFolder="/var/www/lg2dev/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
