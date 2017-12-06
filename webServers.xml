@@ -1,6 +1,14 @@
 <application>
   <component name="WebServers">
     <option name="servers">
+      <webServer id="43f06572-93cb-461f-ad64-b542d2e35c9f" name="New Love-City" url="http://lgorod.its2dev.ru">
+        <fileTransfer host="lgorod.its2dev.ru" port="22" rootFolder="/var/www/lg2dev/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
       <webServer id="e7f426e9-bf88-4643-b73d-bc327ffaa629" name="it-infinity-server" url="http://www.it-infinity.ru/">
         <fileTransfer host="it-infinity.ru" port="21">
           <advancedOptions>
