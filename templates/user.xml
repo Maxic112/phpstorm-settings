@@ -23,4 +23,13 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="ss" value="//---------------------------------------------------$HEADER$------------------------------------------------------------------&#10;$END$" description="Separator string" toReformat="false" toShortenFQNames="true">
+    <variable name="HEADER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSON" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
