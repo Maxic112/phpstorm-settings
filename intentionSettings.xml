@@ -2,8 +2,9 @@
   <component name="IntentionManagerSettings">
     <ignoreAction name="Javascript/Language Injection/Annotate injection with comment" />
     <ignoreAction name="Javascript/Language Injection/Don't format injected content" />
-    <ignoreAction name="CoffeeScript/Replace Double-Quoted String with Single-Quoted String" />
-    <ignoreAction name="CoffeeScript/Replace Single-Quoted String with Double-Quoted String" />
     <ignoreAction name="JavaScript/Other/Replace Double-Quoted String with Single-Quoted String" />
+    <ignoreAction name="CoffeeScript/Replace Double-Quoted String with Single-Quoted String" />
+    <ignoreAction name="Language Injection/Edit Injected Fragment" />
+    <ignoreAction name="JavaScript/Language Injection/Annotate injection with comment" />
   </component>
 </application>
