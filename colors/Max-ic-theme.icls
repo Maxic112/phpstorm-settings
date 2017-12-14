@@ -97,5 +97,15 @@
         <option name="FOREGROUND" value="f92672" />
       </value>
     </option>
+    <option name="JS.GLOBAL_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="7ab6b7" />
+      </value>
+    </option>
+    <option name="JS.LOCAL_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="7d94ff" />
+      </value>
+    </option>
   </attributes>
 </scheme>
