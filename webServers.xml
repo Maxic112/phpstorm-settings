@@ -17,6 +17,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="2c429337-446f-4760-9ad3-0cf2795a6fce" name="Filkos Cab SFTP" url="http://dev4.filkos.com">
+        <fileTransfer host="dev4.filkos.com" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
