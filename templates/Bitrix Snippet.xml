@@ -1,0 +1,7 @@
+<templateSet group="Bitrix Snippet">
+  <template name="snippetCIBlockElementGetList" value="$arOrder = [&#10;&#9;'SORT' =&gt; 'ASC',&#10;];&#10;$arFilter = [&#10;    'IBLOCK_ID' =&gt; 12,&#10;//    'PROPERTY_' =&gt; 0,&#10;];&#10;$arNavStartParams = [&#10;//    'nTopCount' =&gt; 10,&#10;];&#10;$arSelectFields = [&#10;//    'IBLOCK_ID',&#10;//    'ID',&#10;];&#10;$CDBResult = CIBlockElement::GetList($arOrder,$arFilter,false,$arNavStartParams,$arSelectFields);&#10;while ($element = $CDBResult-&gt;GetNext(true,false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockElement::GetList" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
