@@ -9,4 +9,9 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="snippetCIBlockPropertyEnumGetList" value="$arOrder  = [&#10;    'SORT' =&gt; 'ASC',&#10;    'VALUE' =&gt; 'ASC',&#10;];&#10;$arFilter = [&#10;//    'CODE' =&gt; 0,&#10;//    'PROPERTY_ID' =&gt; 0,&#10;//    'IBLOCK_ID' =&gt; 0,&#10;];&#10;$CDBResult = CIBlockPropertyEnum::GetList($arOrder, $arFilter); // https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockpropertyenum/getlist.php&#10;while ($element = $CDBResult-&gt;GetNext(true, false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockPropertyEnum::GetList" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
