@@ -144,7 +144,7 @@
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="$ready" value="$(document).ready(function() {&#10;    //doesn't wait for images, style sheets etc..&#10;    //is called after the DOM has been initialized &#10;    $(&quot;$end$&quot;)&#10;});" description="$(document).ready" toReformat="false" toShortenFQNames="true">
+  <template name="$ready" value="$(document).ready(function() {&#10;&#9;$end$&#10;});" description="$(document).ready" toReformat="false" toShortenFQNames="true">
     <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HAML" value="false" />
