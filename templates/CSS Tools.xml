@@ -1,0 +1,7 @@
+<templateSet group="CSS Tools">
+  <template name="snippetPropNoSelect" value="-webkit-touch-callout: none; /* iOS Safari */&#10;-webkit-user-select: none; /* Safari */&#10;-khtml-user-select: none; /* Konqueror HTML */&#10;-moz-user-select: none; /* Firefox */&#10;-ms-user-select: none; /* Internet Explorer/Edge */&#10;user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */" description="Properties that forbid the selection of an element" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+</templateSet>
