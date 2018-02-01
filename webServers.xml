@@ -68,8 +68,16 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="c75ed228-5038-49b0-92ee-7d525c7a2a87" name="Love-City Main Host" url="http://lgorod-nk.ru/">
+      <webServer id="c75ed228-5038-49b0-92ee-7d525c7a2a87" name="Love-City Main Host (1)" url="http://lgorod-nk.ru/">
         <fileTransfer host="lgorod-nk.ru" port="22" rootFolder="/var/www/lgorod/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="2fbcd729-a84d-473f-80d4-5523aebeb8c2" name="Kompas Dev" url="http://kompas.its2dev.ru">
+        <fileTransfer host="kompas.its2dev.ru" port="22" rootFolder="/var/www/kmp2dev/data" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
