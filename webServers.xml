@@ -84,6 +84,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="8b15184f-1429-493a-a3c7-f6e1ee3328bb" name="Kompas Main-Host" url="http://pro-kompas.info">
+        <fileTransfer host="pro-kompas.info" port="22" rootFolder="/var/www/kompas/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
