@@ -10,4 +10,10 @@
       <option name="CSS" value="true" />
     </context>
   </template>
+  <template name="meds" value="@media screen and (max-width: $WIDTH$) {&#10;&#10;&#9;$END$&#10;}" description="@media screen and (max-width: 1px)" toReformat="false" toShortenFQNames="true">
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
 </templateSet>
