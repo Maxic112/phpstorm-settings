@@ -92,6 +92,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="42586407-88c8-4314-9eac-1e7127458217" name="industria-reestr.ru Main-Host" url="http://217.112.33.101">
+        <fileTransfer host="217.112.33.101" port="21" rootFolder="/htdocs">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
