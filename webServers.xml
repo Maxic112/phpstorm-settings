@@ -124,6 +124,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="00e0eecb-81a1-44d6-abc7-bb7bd00ce3ca" name="Beefood Site Main-Host" url="http://bee-food.ru">
+        <fileTransfer host="bee-food.ru" port="22" rootFolder="/var/www/beefood/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
