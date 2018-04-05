@@ -132,6 +132,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="e0d6cf52-2130-49e2-b4a3-0aa205128290" name="an-1-Line Production" url="http://itinfinity.ru">
+        <fileTransfer host="itinfinity.ru" port="22" rootFolder="/var/www/an1line/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
