@@ -140,6 +140,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="9676f846-c124-4915-acf6-22d9212f9dbe" name="Etalon Main-Host" url="http://etalon42.net">
+        <fileTransfer host="etalon42.net" port="22" rootFolder="/home/c/cs76452" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
