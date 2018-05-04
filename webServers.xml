@@ -148,6 +148,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="44264e8f-556d-42dd-b35c-25427dd70471" name="Lgorod CRM" url="http://lgportal.its2dev.ru">
+        <fileTransfer host="lgportal.its2dev.ru" port="22" rootFolder="/var/www/lgportal/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
