@@ -156,6 +156,22 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="784ce338-8317-4c60-b1fe-54eb284afd69" name="Beefood CRM  Main-Host" url="http://crm.bee-food.ru">
+        <fileTransfer host="crm.bee-food.ru" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="3ceab5c2-076b-4686-b887-9ac713cadeec" name="Beefood Main-Host 2" url="http://crm.bee-food.ru">
+        <fileTransfer host="crm.bee-food.ru" port="22" rootFolder="/var/www/beefood/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
