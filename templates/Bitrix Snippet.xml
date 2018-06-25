@@ -1,5 +1,5 @@
 <templateSet group="Bitrix Snippet">
-  <template name="snippetCIBlockElementGetList" value="$arOrder = [&#10;&#9;'SORT' =&gt; 'ASC',&#10;];&#10;$arFilter = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;//    'IBLOCK_ID' =&gt; 0,&#10;//    'PROPERTY_' =&gt; 0,&#10;];&#10;$arNavStartParams = [&#10;//    'nTopCount' =&gt; 5,&#10;];&#10;$arSelectFields = [&#10;//    'IBLOCK_ID',&#10;//    'ID',&#10;];&#10;$CDBResult = CIBlockElement::GetList($arOrder,$arFilter,false,$arNavStartParams,$arSelectFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/getlist.php&#10;while ($element = $CDBResult-&gt;GetNext(true,false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockElement::GetList" toReformat="true" toShortenFQNames="true">
+  <template name="snippetCIBlockElementGetList" value="$arFilter = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;    'IBLOCK_ID' =&gt; 0,&#10;//    'PROPERTY_' =&gt; 0,&#10;];&#10;$arSelectFields = [&#10;//&#9;  '*',&#10;//    'IBLOCK_ID',&#10;//    'ID',&#10;];&#10;$CDBResult = CIBlockElement::GetList(['SORT' =&gt; 'ASC'],$arFilter,false,false,$arSelectFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/getlist.php&#10;while ($element = $CDBResult-&gt;GetNext(true,false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockElement::GetList" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
@@ -10,6 +10,11 @@
     </context>
   </template>
   <template name="snippetCIBlockPropertyEnumGetList" value="$arOrder  = [&#10;    'SORT' =&gt; 'ASC',&#10;    'VALUE' =&gt; 'ASC',&#10;];&#10;$arFilter = [&#10;//    'CODE' =&gt; 0,&#10;//    'PROPERTY_ID' =&gt; 0,&#10;//    'IBLOCK_ID' =&gt; 0,&#10;];&#10;$CDBResult = CIBlockPropertyEnum::GetList($arOrder, $arFilter); // https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockpropertyenum/getlist.php&#10;while ($element = $CDBResult-&gt;GetNext(true, false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockPropertyEnum::GetList" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snippetCIBlockSectionGetList" value="$arFilter = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;//    'PROPERTY_' =&gt; 0,&#10;];&#10;$arSelectFields = [&#10;//&#9;'*', &#10;//&#9;'IBLOCK_ID', &#10;//&#9;'ID',&#10;];&#10;$CDBResult = CIBlockSection::GetList(['SORT' =&gt; 'ASC'], $arFilter, false, $arSelectFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblocksection/getlist.php&#10;while ($section = $CDBResult-&gt;GetNext(true, false)) {&#10;&#9;$arSections[] = $section;&#10;}" description="Bitrix CIBlockSection::GetList" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
