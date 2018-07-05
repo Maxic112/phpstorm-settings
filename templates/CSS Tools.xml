@@ -16,4 +16,11 @@
       <option name="CSS" value="true" />
     </context>
   </template>
+  <template name="snippetSelectorPlaceholder" value="$SELECTOR$::placeholder {&#10;&#9;$START$&#10;}&#10;&#10;$SELECTOR$:-ms-input-placeholder {&#10;&#9;$START$&#10;}&#10;&#10;$SELECTOR$::-ms-input-placeholder {&#10;&#9;$START$&#10;}&#10;&#10;$SELECTOR$::-webkit-input-placeholder {&#10;&#9;$START$&#10;}&#10;&#10;$SELECTOR$:-moz-placeholder {&#10;&#9;$START$&#10;}&#10;&#10;$SELECTOR$::-moz-placeholder {&#10;&#9;$START$&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
 </templateSet>
