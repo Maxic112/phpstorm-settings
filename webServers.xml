@@ -172,14 +172,6 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="3de73abb-7334-4124-a36b-3f71ac054eb8" name="Smile NK" url="http://uplinkweb.ru">
-        <fileTransfer host="uplinkweb.ru" port="21" rootFolder="/www/smile-nk.ru">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="21" />
-        </fileTransfer>
-      </webServer>
     </option>
   </component>
 </application>
