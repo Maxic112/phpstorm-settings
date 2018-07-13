@@ -19,4 +19,9 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="snippetBitrixApiTemplate" value="&#10;//Подключаем API битрикса&#10;require($_SERVER[&quot;DOCUMENT_ROOT&quot;] . &quot;/bitrix/modules/main/include/prolog_before.php&quot;);&#10;&#10;//Заголовки&#10;header('Cache-Control: no-cache, no-store, must-revalidate'); //Отключает кэширование&#10;header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); //Дата и время после которой ответ считается устаревшим&#10;header('Content-type: application/json'); // Тип возвращаемого контекта&#10;&#10;//Отключаем статистику Bitrix&#10;define(&quot;NO_KEEP_STATISTIC&quot;, true);&#10;define(&quot;NOT_CHECK_PERMISSIONS&quot;, true);&#10;&#10;$dataResult =  [&#10;&#9;'error' =&gt; false,&#10;&#9;'error_msg' =&gt; '',&#10;&#9;'result'&#10;];&#10;&#10;try {&#10;&#10;//&#9;Основной испольняемый код api&#10;//&#9;CModule::IncludeModule('iblock');&#10;&#10;} catch (Exception $e) {&#10;&#9;//Обработка ошибок&#10;&#9;$dataResult['error'] = true;&#10;&#9;$dataResult['error_msg'] = $e-&gt;getMessage();&#10;}&#10;&#10;//Отправка (вывод) ответа на frontend&#10;echo json_encode($dataResult,JSON_UNESCAPED_UNICODE);" description="Bitrix API Template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
