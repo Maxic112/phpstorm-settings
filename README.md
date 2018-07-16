@@ -1,2 +1,2 @@
 # phpstorm-settings
-Just my phpstorm config
+Just my PHPstorm config
