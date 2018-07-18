@@ -23,4 +23,9 @@
       <option name="CSS" value="true" />
     </context>
   </template>
+  <template name="dflex" value="display: -webkit-box;&#10;display: -moz-box;&#10;display: -ms-flexbox;&#10;display: -webkit-flex;&#10;display: flex;" description="display: flex;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
 </templateSet>
