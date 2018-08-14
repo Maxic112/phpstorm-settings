@@ -172,6 +172,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="532d40be-ff4e-48bd-b93e-fbaa43feab44" name="Almisib.ru" url="http://almisib.ru/">
+        <fileTransfer host="almisib.ru" port="22" rootFolder="/var/www/almisib/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
