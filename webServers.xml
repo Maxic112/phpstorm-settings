@@ -196,6 +196,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="630b7951-4332-4923-9b9e-9a93a20ae0e8" name="KMB Garant MH" url="http://kbmgarant.ru">
+        <fileTransfer host="kbmgarant.ru" port="22" rootFolder="/var/www/kbmg/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
