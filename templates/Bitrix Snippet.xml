@@ -1,5 +1,5 @@
 <templateSet group="Bitrix Snippet">
-  <template name="snbxCIBlockElementGetList" value="$arFilter = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;    'IBLOCK_ID' =&gt; 0,&#10;//    'PROPERTY_' =&gt; 0,&#10;];&#10;$arSelectFields = [&#10;//&#9;  '*',&#10;//    'IBLOCK_ID',&#10;//    'ID',&#10;];&#10;$CDBResult = CIBlockElement::GetList(['SORT' =&gt; 'ASC'],$arFilter,false,false,$arSelectFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/getlist.php&#10;while ($element = $CDBResult-&gt;GetNext(true,false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockElement::GetList" toReformat="true" toShortenFQNames="true">
+  <template name="snbxCIBlockElementGetList" value="CModule::IncludeModule('iblock');&#10;$arFilter = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;    'IBLOCK_ID' =&gt; 0,&#10;//    'PROPERTY_' =&gt; 0,&#10;];&#10;$arSelectFields = [&#10;//&#9;  '*',&#10;//    'IBLOCK_ID',&#10;//    'ID',&#10;];&#10;$CDBResult = CIBlockElement::GetList(['SORT' =&gt; 'ASC'],$arFilter,false,false,$arSelectFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/getlist.php&#10;while ($element = $CDBResult-&gt;GetNext(true,false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockElement::GetList" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
@@ -34,12 +34,27 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snbxCIBlockElementAdd" value="$arProperty = [&#10;&#9;'PROPERTY_NAME' =&gt; '',&#10;];&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'PROPERTY_VALUES' =&gt; $arProperty,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; 'Название элемента',&#10;];&#10;$newElement = new CIBlockElement();&#10;$addResult = $newElement-&gt;Add($arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/add.php&#10;if (!$addResult) {&#10;&#9;throw new Exception('Ошабка при добавление элемента. ' . $newElement-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockElement::Add" toReformat="false" toShortenFQNames="true">
+  <template name="snbxCIBlockElementAdd" value="CModule::IncludeModule('iblock');&#10;$arProperty = [&#10;&#9;'PROPERTY_NAME' =&gt; '',&#10;];&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'PROPERTY_VALUES' =&gt; $arProperty,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; 'Название элемента',&#10;];&#10;$newElement = new CIBlockElement();&#10;$addResult = $newElement-&gt;Add($arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/add.php&#10;if (!$addResult) {&#10;&#9;throw new Exception('Ошабка при добавление элемента. ' . $newElement-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockElement::Add" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snbxCIBlockElementUpdate" value="$arProperty = [&#10;&#9;'PROPERTY_NAME' =&gt; '',&#10;];&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'PROPERTY_VALUES' =&gt; $arProperty,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; 'Название элемента',&#10;];&#10;$updateElement = new CIBlockElement();&#10;$updateResult = $updateElement-&gt;Update(0, $arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/update.php&#10;if (!$updateResult) {&#10;&#9;throw new Exception('Ошабка при добавление элемента. ' . $updateElement-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockElement::Update" toReformat="false" toShortenFQNames="true">
+  <template name="snbxCIBlockElementUpdate" value="CModule::IncludeModule('iblock');&#10;$arProperty = [&#10;&#9;'PROPERTY_NAME' =&gt; '',&#10;];&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'PROPERTY_VALUES' =&gt; $arProperty,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; 'Название элемента',&#10;];&#10;$updateElement = new CIBlockElement();&#10;$updateResult = $updateElement-&gt;Update(0, $arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/update.php&#10;if (!$updateResult) {&#10;&#9;throw new Exception('Ошабка при добавление элемента. ' . $updateElement-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockElement::Update" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxCIBlockSectionGetList" value="CModule::IncludeModule('iblock');&#10;$arFilter = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;//&#9;'DEPTH_LEVEL' =&gt; 1,&#10;//&#9;'NAME' =&gt; '',&#10;//&#9;'CODE' =&gt; '',&#10;//&#9;'SECTION_ID' =&gt; '',&#10;];&#10;$arSelect = [&#10;&#9;'*'&#10;];&#10;$cDbResult = CIBlockSection::GetList(['SORT' =&gt; 'ASC'], $arFilter, false, $arSelect); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblocksection/getlist.php&#10;$arSections = [];&#10;while ($section = $cDbResult-&gt;GetNext(true, false)) {&#10;&#9;$arSections = $section;&#10;}" description="Bitrix CIBlockSection::GetList" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxCIBlockSectionAdd" value="CModule::IncludeModule('iblock');&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; '',&#10;];&#10;$newSection = new CIBlockSection();&#10;$addSectionResult = $newSection-&gt;Add($arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblocksection/add.php&#10;if (!$addSectionResult) {&#10;&#9;throw new Exception('Ошибка при создании раздела. ' . $newSection-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockSection:Add" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxCIBlockSectionUpdate" value="CModule::IncludeModule('iblock');&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; '',&#10;];&#10;$updateSection = new CIBlockSection();&#10;$updateSectionResult = $updateSection-&gt;Update(0, $arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblocksection/update.php&#10;if (!$updateSectionResult) {&#10;&#9;throw new Exception('Ошибка при обновлении раздела. ' . $updateSection-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockSection::Update" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
