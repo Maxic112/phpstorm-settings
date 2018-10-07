@@ -59,4 +59,26 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="snbxCUserAdd" value="$arFields = [&#10;&#9;'ACTIVE' =&gt; '',&#10;&#9;'LOGIN' =&gt; '',&#10;&#9;'EMAIL' =&gt; '',&#10;&#9;'PASSWORD' =&gt; '',&#10;&#9;'CONFIRM_PASSWORD' =&gt; '',&#10;&#9;'NAME' =&gt; '',&#10;&#9;'LAST_NAME' =&gt; '',&#10;&#9;'SECOND_NAME' =&gt; '',&#10;];&#10;$newUser = new CUser();&#10;$addUserResult = $newUser-&gt;Add($arFields);// https://dev.1c-bitrix.ru/api_help/main/reference/cuser/add.php&#10;if (!$addUserResult) {&#10;&#9;throw new Exception('Ошибка про добавлении пользователя. ' . $newUser-&gt;LAST_ERROR);&#10;}" description="Bitrix CUser::Add" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxDateFormat" value="'d.m.Y H:i:s'" description="Bitrix Date Format" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxAddCss" value="Asset::getInstance()-&gt;addCss( SITE_TEMPLATE_PATH . '/$END$' );" description="Bitrix Add Css Function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxAddJs" value="Asset::getInstance()-&gt;addJs( SITE_TEMPLATE_PATH . '/$END$');" description="Bitrix Add Js Function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
