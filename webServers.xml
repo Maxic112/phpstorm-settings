@@ -61,7 +61,7 @@
         </fileTransfer>
       </webServer>
       <webServer id="e02dcb88-afd7-4b0b-af45-93197dca49b7" name="Love-City Main Host" url="http://lgorod-nk.ru/">
-        <fileTransfer host="lgorod-nk.ru" port="22" rootFolder="/var/www/lgorod/data" accessType="SFTP">
+        <fileTransfer host="lgorod.com" port="22" rootFolder="/var/www/lgorod/data" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
@@ -175,7 +175,7 @@
       <webServer id="532d40be-ff4e-48bd-b93e-fbaa43feab44" name="Almisib.ru" url="http://almisib.ru/">
         <fileTransfer host="almisib.ru" port="22" rootFolder="/var/www/almisib/data" accessType="SFTP">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
           <option name="port" value="22" />
         </fileTransfer>
@@ -183,7 +183,7 @@
       <webServer id="4a80e793-a4b0-4316-990e-f0e6aee5aafb" name="Gallery-Stone Main-Host" url="http://gallery-stone.ru">
         <fileTransfer host="gallery-stone.ru" port="22" rootFolder="/var/www/gstone/data" accessType="SFTP">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
           <option name="port" value="22" />
         </fileTransfer>
@@ -191,7 +191,7 @@
       <webServer id="fc9ab44e-501b-413d-b216-be8bee44c905" name="Continental (ih-nk.ru)" url="http://ih-nk.ru/">
         <fileTransfer host="ih-nk.ru" port="22" rootFolder="/var/www/ihnk/data" accessType="SFTP">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
           <option name="port" value="22" />
         </fileTransfer>
@@ -199,7 +199,7 @@
       <webServer id="630b7951-4332-4923-9b9e-9a93a20ae0e8" name="KMB Garant MH" url="http://kbmgarant.ru">
         <fileTransfer host="kbmgarant.ru" port="22" rootFolder="/var/www/kbmg/data" accessType="SFTP">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
           <option name="port" value="22" />
         </fileTransfer>
