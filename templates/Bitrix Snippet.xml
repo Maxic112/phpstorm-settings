@@ -1,35 +1,82 @@
 <templateSet group="Bitrix Snippet">
-  <template name="snippetCIBlockElementGetList" value="$arFilter = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;    'IBLOCK_ID' =&gt; 0,&#10;//    'PROPERTY_' =&gt; 0,&#10;];&#10;$arSelectFields = [&#10;//&#9;  '*',&#10;//    'IBLOCK_ID',&#10;//    'ID',&#10;];&#10;$CDBResult = CIBlockElement::GetList(['SORT' =&gt; 'ASC'],$arFilter,false,false,$arSelectFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/getlist.php&#10;while ($element = $CDBResult-&gt;GetNext(true,false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockElement::GetList" toReformat="true" toShortenFQNames="true">
+  <template name="snbxCIBlockElementGetList" value="CModule::IncludeModule('iblock');&#10;$arFilter = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;    'IBLOCK_ID' =&gt; 0,&#10;//    'PROPERTY_' =&gt; 0,&#10;];&#10;$arSelectFields = [&#10;//&#9;  '*',&#10;//    'IBLOCK_ID',&#10;//    'ID',&#10;];&#10;$CDBResult = CIBlockElement::GetList(['SORT' =&gt; 'ASC'],$arFilter,false,false,$arSelectFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/getlist.php&#10;while ($element = $CDBResult-&gt;GetNext(true,false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockElement::GetList" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snippetCUserGetList" value="$arFilter = [&#10;    'ACTIVE' =&gt; 'Y',&#10;//&#9;'ID' =&gt; 0,&#10;];&#10;$arParameters = [&#10;    'FIELDS' =&gt; [&#10;//        'ID',&#10;//        'LOGIN',&#10;//        'EMAIL',&#10;    ],&#10;    'SELECT' =&gt; [&#10;//        'UF_*',&#10;    ]&#10;];&#10;$CDBResult = CUser::GetList($sortBy='timestamp_x', $order='desc', $arFilter, $arParameters); // https://dev.1c-bitrix.ru/api_help/main/reference/cuser/getlist.php&#10;while ($user = $CDBResult-&gt;GetNext(true, false)) {&#10;&#9;$arUsers[] = $user;&#10;}&#10;" description="Bitrix CUser::GetList" toReformat="true" toShortenFQNames="true">
+  <template name="snbxCUserGetList" value="$arFilter = [&#10;    'ACTIVE' =&gt; 'Y',&#10;//&#9;'ID' =&gt; 0,&#10;];&#10;$arParameters = [&#10;    'FIELDS' =&gt; [&#10;//        'ID',&#10;//        'LOGIN',&#10;//        'EMAIL',&#10;    ],&#10;    'SELECT' =&gt; [&#10;//        'UF_*',&#10;    ]&#10;];&#10;$CDBResult = CUser::GetList($sortBy='timestamp_x', $order='desc', $arFilter, $arParameters); // https://dev.1c-bitrix.ru/api_help/main/reference/cuser/getlist.php&#10;while ($user = $CDBResult-&gt;GetNext(true, false)) {&#10;&#9;$arUsers[] = $user;&#10;}&#10;" description="Bitrix CUser::GetList" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snippetCIBlockPropertyEnumGetList" value="$arOrder  = [&#10;    'SORT' =&gt; 'ASC',&#10;    'VALUE' =&gt; 'ASC',&#10;];&#10;$arFilter = [&#10;//    'CODE' =&gt; 0,&#10;//    'PROPERTY_ID' =&gt; 0,&#10;//    'IBLOCK_ID' =&gt; 0,&#10;];&#10;$CDBResult = CIBlockPropertyEnum::GetList($arOrder, $arFilter); // https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockpropertyenum/getlist.php&#10;while ($element = $CDBResult-&gt;GetNext(true, false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockPropertyEnum::GetList" toReformat="false" toShortenFQNames="true">
+  <template name="snbxCIBlockPropertyEnumGetList" value="$arOrder  = [&#10;    'SORT' =&gt; 'ASC',&#10;    'VALUE' =&gt; 'ASC',&#10;];&#10;$arFilter = [&#10;//    'CODE' =&gt; 0,&#10;//    'PROPERTY_ID' =&gt; 0,&#10;//    'IBLOCK_ID' =&gt; 0,&#10;];&#10;$CDBResult = CIBlockPropertyEnum::GetList($arOrder, $arFilter); // https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockpropertyenum/getlist.php&#10;while ($element = $CDBResult-&gt;GetNext(true, false)) {&#10;    $arElements[] = $element;&#10;}&#10;" description="Bitrix CIBlockPropertyEnum::GetList" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snippetCIBlockSectionGetList" value="$arFilter = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;//    'PROPERTY_' =&gt; 0,&#10;];&#10;$arSelectFields = [&#10;//&#9;'*', &#10;//&#9;'IBLOCK_ID', &#10;//&#9;'ID',&#10;];&#10;$CDBResult = CIBlockSection::GetList(['SORT' =&gt; 'ASC'], $arFilter, false, $arSelectFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblocksection/getlist.php&#10;while ($section = $CDBResult-&gt;GetNext(true, false)) {&#10;&#9;$arSections[] = $section;&#10;}" description="Bitrix CIBlockSection::GetList" toReformat="false" toShortenFQNames="true">
+  <template name="snbxApiSingleAction" value="&#10;//Подключаем API битрикса&#10;require($_SERVER[&quot;DOCUMENT_ROOT&quot;] . &quot;/bitrix/modules/main/include/prolog_before.php&quot;);&#10;&#10;//Заголовки&#10;header('Cache-Control: no-cache, no-store, must-revalidate'); //Отключает кэширование&#10;header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); //Дата и время после которой ответ считается устаревшим&#10;header('Content-type: application/json'); // Тип возвращаемого контекта&#10;&#10;//Отключаем статистику Bitrix&#10;define(&quot;NO_KEEP_STATISTIC&quot;, true);&#10;define(&quot;NOT_CHECK_PERMISSIONS&quot;, true);&#10;&#10;$dataResult =  [&#10;&#9;'error' =&gt; false,&#10;&#9;'error_msg' =&gt; '',&#10;&#9;'result' =&gt; '',&#10;];&#10;&#10;try {&#10;&#10;//&#9;Основной испольняемый код api&#10;//&#9;CModule::IncludeModule('iblock');&#10;&#10;} catch (Exception $e) {&#10;&#9;//Обработка ошибок&#10;&#9;$dataResult['error'] = true;&#10;&#9;$dataResult['error_msg'] = $e-&gt;getMessage();&#10;}&#10;&#10;//Отправка (вывод) ответа на frontend&#10;echo json_encode($dataResult,JSON_UNESCAPED_UNICODE);" description="Bitrix API Template" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snippetBitrixApiTemplate" value="&#10;//Подключаем API битрикса&#10;require($_SERVER[&quot;DOCUMENT_ROOT&quot;] . &quot;/bitrix/modules/main/include/prolog_before.php&quot;);&#10;&#10;//Заголовки&#10;header('Cache-Control: no-cache, no-store, must-revalidate'); //Отключает кэширование&#10;header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); //Дата и время после которой ответ считается устаревшим&#10;header('Content-type: application/json'); // Тип возвращаемого контекта&#10;&#10;//Отключаем статистику Bitrix&#10;define(&quot;NO_KEEP_STATISTIC&quot;, true);&#10;define(&quot;NOT_CHECK_PERMISSIONS&quot;, true);&#10;&#10;$dataResult =  [&#10;&#9;'error' =&gt; false,&#10;&#9;'error_msg' =&gt; '',&#10;&#9;'result' =&gt; '',&#10;];&#10;&#10;try {&#10;&#10;//&#9;Основной испольняемый код api&#10;//&#9;CModule::IncludeModule('iblock');&#10;&#10;} catch (Exception $e) {&#10;&#9;//Обработка ошибок&#10;&#9;$dataResult['error'] = true;&#10;&#9;$dataResult['error_msg'] = $e-&gt;getMessage();&#10;}&#10;&#10;//Отправка (вывод) ответа на frontend&#10;echo json_encode($dataResult,JSON_UNESCAPED_UNICODE);" description="Bitrix API Template" toReformat="false" toShortenFQNames="true">
+  <template name="snbxApiMenu" value="&#10;//Подключаем API битрикса&#10;require($_SERVER[&quot;DOCUMENT_ROOT&quot;] . &quot;/bitrix/modules/main/include/prolog_before.php&quot;);&#10;&#10;//Заголовки&#10;header('Cache-Control: no-cache, no-store, must-revalidate'); //Отключает кэширование&#10;header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); //Дата и время после которой ответ считается устаревшим&#10;header('Content-type: application/json'); // Тип возвращаемого контекта&#10;&#10;//Отключаем статистику Bitrix&#10;define(&quot;NO_KEEP_STATISTIC&quot;, true);&#10;define(&quot;NOT_CHECK_PERMISSIONS&quot;, true);&#10;&#10;$dataResult =  [&#10;&#9;'error' =&gt; false,&#10;&#9;'error_msg' =&gt; '',&#10;&#9;'result' =&gt; '',&#10;];&#10;&#10;try {&#10;&#9;$action = $_REQUEST['action'];&#10;&#9;if (empty($action) || !isset($action) || count($action) === 0) {&#10;&#9;&#9;throw new Exception('Действие не указано');&#10;&#9;}&#10;&#9;&#10;&#9;switch ($action) {&#10;&#9;&#9;case 'actionName' : include_once 'actionFileName.php'; break;&#10;&#9;&#9;default : throw new Exception('Обработка на указанное(&quot;'.$action.'&quot;&quot;) действие отсутствует');&#10;&#9;}&#10;&#9;&#10;} catch (Exception $e) {&#10;&#9;//Обработка ошибок&#10;&#9;$dataResult['error'] = true;&#10;&#9;$dataResult['error_msg'] = $e-&gt;getMessage();&#10;}&#10;&#10;//Отправка (вывод) ответа на frontend&#10;echo json_encode($dataResult,JSON_UNESCAPED_UNICODE);" description="Bitrix API Menu Template" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snippetBitrixApiMenuTemplate" value="&#10;//Подключаем API битрикса&#10;require($_SERVER[&quot;DOCUMENT_ROOT&quot;] . &quot;/bitrix/modules/main/include/prolog_before.php&quot;);&#10;&#10;//Заголовки&#10;header('Cache-Control: no-cache, no-store, must-revalidate'); //Отключает кэширование&#10;header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); //Дата и время после которой ответ считается устаревшим&#10;header('Content-type: application/json'); // Тип возвращаемого контекта&#10;&#10;//Отключаем статистику Bitrix&#10;define(&quot;NO_KEEP_STATISTIC&quot;, true);&#10;define(&quot;NOT_CHECK_PERMISSIONS&quot;, true);&#10;&#10;$dataResult =  [&#10;&#9;'error' =&gt; false,&#10;&#9;'error_msg' =&gt; '',&#10;&#9;'result' =&gt; '',&#10;];&#10;&#10;try {&#10;&#9;$action = $_REQUEST['action'];&#10;&#9;if (empty($action) || !isset($action) || count($action) === 0) {&#10;&#9;&#9;throw new Exception('Действие не указано');&#10;&#9;}&#10;&#9;&#10;&#9;switch ($action) {&#10;&#9;&#9;case 'actionName' : include_once 'actionFileName.php'; break;&#10;&#9;&#9;default : throw new Exception('Обработка на указанное(&quot;'.$action.'&quot;&quot;) действие отсутствует');&#10;&#9;}&#10;&#9;&#10;} catch (Exception $e) {&#10;&#9;//Обработка ошибок&#10;&#9;$dataResult['error'] = true;&#10;&#9;$dataResult['error_msg'] = $e-&gt;getMessage();&#10;}&#10;&#10;//Отправка (вывод) ответа на frontend&#10;echo json_encode($dataResult,JSON_UNESCAPED_UNICODE);" description="Bitrix API Menu Template" toReformat="false" toShortenFQNames="true">
+  <template name="snbxApiAction" value="if(!defined(&quot;B_PROLOG_INCLUDED&quot;) || B_PROLOG_INCLUDED!==true)die();&#10;&#10;$END$&#10;&#10;$dataResult['result'] = '';" description="Bitrix API Action Template" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snippetBitrixApiActionTemplate" value="if(!defined(&quot;B_PROLOG_INCLUDED&quot;) || B_PROLOG_INCLUDED!==true)die();&#10;&#10;$END$&#10;&#10;$dataResult['result'] = '';" description="Bitrix API Action Template" toReformat="false" toShortenFQNames="true">
+  <template name="snbxCIBlockElementAdd" value="CModule::IncludeModule('iblock');&#10;$arProperty = [&#10;&#9;'PROPERTY_NAME' =&gt; '',&#10;];&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'PROPERTY_VALUES' =&gt; $arProperty,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; 'Название элемента',&#10;];&#10;$newElement = new CIBlockElement();&#10;$addResult = $newElement-&gt;Add($arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/add.php&#10;if (!$addResult) {&#10;&#9;throw new Exception('Ошабка при добавление элемента. ' . $newElement-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockElement::Add" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxCIBlockElementUpdate" value="CModule::IncludeModule('iblock');&#10;$arProperty = [&#10;&#9;'PROPERTY_NAME' =&gt; '',&#10;];&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'PROPERTY_VALUES' =&gt; $arProperty,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; 'Название элемента',&#10;];&#10;$updateElement = new CIBlockElement();&#10;$updateResult = $updateElement-&gt;Update(0, $arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/update.php&#10;if (!$updateResult) {&#10;&#9;throw new Exception('Ошабка при добавление элемента. ' . $updateElement-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockElement::Update" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxCIBlockSectionGetList" value="CModule::IncludeModule('iblock');&#10;$arFilter = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;//&#9;'DEPTH_LEVEL' =&gt; 1,&#10;//&#9;'NAME' =&gt; '',&#10;//&#9;'CODE' =&gt; '',&#10;//&#9;'SECTION_ID' =&gt; '',&#10;];&#10;$arSelect = [&#10;&#9;'*'&#10;];&#10;$cDbResult = CIBlockSection::GetList(['SORT' =&gt; 'ASC'], $arFilter, false, $arSelect); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblocksection/getlist.php&#10;$arSections = [];&#10;while ($section = $cDbResult-&gt;GetNext(true, false)) {&#10;&#9;$arSections = $section;&#10;}" description="Bitrix CIBlockSection::GetList" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxCIBlockSectionAdd" value="CModule::IncludeModule('iblock');&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; '',&#10;];&#10;$newSection = new CIBlockSection();&#10;$addSectionResult = $newSection-&gt;Add($arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblocksection/add.php&#10;if (!$addSectionResult) {&#10;&#9;throw new Exception('Ошибка при создании раздела. ' . $newSection-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockSection:Add" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxCIBlockSectionUpdate" value="CModule::IncludeModule('iblock');&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; '',&#10;];&#10;$updateSection = new CIBlockSection();&#10;$updateSectionResult = $updateSection-&gt;Update(0, $arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblocksection/update.php&#10;if (!$updateSectionResult) {&#10;&#9;throw new Exception('Ошибка при обновлении раздела. ' . $updateSection-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockSection::Update" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxCUserAdd" value="$arFields = [&#10;&#9;'ACTIVE' =&gt; '',&#10;&#9;'LOGIN' =&gt; '',&#10;&#9;'EMAIL' =&gt; '',&#10;&#9;'PASSWORD' =&gt; '',&#10;&#9;'CONFIRM_PASSWORD' =&gt; '',&#10;&#9;'NAME' =&gt; '',&#10;&#9;'LAST_NAME' =&gt; '',&#10;&#9;'SECOND_NAME' =&gt; '',&#10;];&#10;$newUser = new CUser();&#10;$addUserResult = $newUser-&gt;Add($arFields);// https://dev.1c-bitrix.ru/api_help/main/reference/cuser/add.php&#10;if (!$addUserResult) {&#10;&#9;throw new Exception('Ошибка про добавлении пользователя. ' . $newUser-&gt;LAST_ERROR);&#10;}" description="Bitrix CUser::Add" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxDateFormat" value="'d.m.Y H:i:s'" description="Bitrix Date Format" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxAddCss" value="Asset::getInstance()-&gt;addCss( SITE_TEMPLATE_PATH . '/$END$' );" description="Bitrix Add Css Function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxAddJs" value="Asset::getInstance()-&gt;addJs( SITE_TEMPLATE_PATH . '/$END$');" description="Bitrix Add Js Function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxIncludeComponent" value="$APPLICATION-&gt;IncludeComponent('$END$','', Array (), false);" description="Bitrix Include Component Function" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
