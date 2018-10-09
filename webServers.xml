@@ -61,7 +61,7 @@
         </fileTransfer>
       </webServer>
       <webServer id="e02dcb88-afd7-4b0b-af45-93197dca49b7" name="Love-City Main Host" url="http://lgorod-nk.ru/">
-        <fileTransfer host="lgorod-nk.ru" port="22" rootFolder="/var/www/lgorod/data" accessType="SFTP">
+        <fileTransfer host="lgorod.com" port="22" rootFolder="/var/www/lgorod/data" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
