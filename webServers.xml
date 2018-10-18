@@ -92,14 +92,6 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="42586407-88c8-4314-9eac-1e7127458217" name="industria-reestr.ru Main-Host" url="http://217.112.33.101">
-        <fileTransfer host="217.112.33.101" port="21" rootFolder="/htdocs">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="21" />
-        </fileTransfer>
-      </webServer>
       <webServer id="e41f2780-6ffe-4432-a8f7-8e1d0d0bb8ba" name="ZAO-SRK Main-Host" url="http://zao-srk.ru">
         <fileTransfer host="zao-srk.ru" port="22" rootFolder="/var/www/www-root/data" accessType="SFTP">
           <advancedOptions>
