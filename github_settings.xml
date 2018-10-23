@@ -1,4 +1,9 @@
 <application>
+  <component name="GithubAccounts">
+    <account id="11b1749f-836b-4a5b-a0c8-b31783f13eb7" name="Maxic112">
+      <server host="github.com" />
+    </account>
+  </component>
   <component name="GithubSettings">
     <option name="AUTH_TYPE" value="TOKEN" />
     <option name="PRIVATE_GIST" value="false" />
