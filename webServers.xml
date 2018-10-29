@@ -196,6 +196,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="1677b4f7-e791-4145-af59-db7b4b0ad03d" name="MT Main-Host" url="http://mt.itinfinity.ru">
+        <fileTransfer host="mt.itinfinity.ru" port="22" rootFolder="/home/bitrix/www/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
