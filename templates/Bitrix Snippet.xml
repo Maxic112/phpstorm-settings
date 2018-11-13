@@ -81,4 +81,15 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="snbxIsAdmin" value="if ($USER-&gt;IsAdmin()) {&#10;    $END$&#10;}" description="Bitrix Conditional &quot;Is Admin&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxIsAdminTags" value="&lt;? if ($USER-&gt;IsAdmin()): ?&gt;&#10;    $END$&#10;&lt;? endif; ?&gt;" description="Bitrix Conditional &quot;Is Admin&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
