@@ -24,7 +24,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snbxApiAction" value="if(!defined(&quot;B_PROLOG_INCLUDED&quot;) || B_PROLOG_INCLUDED!==true)die();&#10;&#10;$END$&#10;&#10;$dataResult['result'] = '';" description="Bitrix API Action Template" toReformat="false" toShortenFQNames="true">
+  <template name="snbxApiAction" value="if(!defined(&quot;B_PROLOG_INCLUDED&quot;) || B_PROLOG_INCLUDED!==true)die();&#10;&#10;$fields = $_POST;&#10;&#10;if (&#10;&#9;empty($fields[''])&#10;) {&#10;&#9;throw new Exception('Не переданы параметры');&#10;}&#10;&#10;$dataResult['result'] = '';" description="Bitrix API Action Template" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
