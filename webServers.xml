@@ -9,7 +9,7 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="9b137861-7f69-4f40-ba28-e5ecef5ee917" name="crm.arkcrm.ru" url="http://crm.arkcrm.ru">
+      <webServer id="9b137861-7f69-4f40-ba28-e5ecef5ee917" name="arkcrm.ru FRONTEND" url="http://crm.arkcrm.ru">
         <fileTransfer host="crm.arkcrm.ru" port="22" rootFolder="/var/www/arkan/data" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
