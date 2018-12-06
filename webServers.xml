@@ -41,14 +41,6 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
-      <webServer id="0cfb362c-cae6-4261-8eb0-e6f0d3356187" name="gallery-stone.ru" url="http://gallery-stone.ru">
-        <fileTransfer host="gallery-stone.ru" port="21">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="21" />
-        </fileTransfer>
-      </webServer>
       <webServer id="373f738d-45af-4f69-a13d-f9ec1ba47a8e" name="js-library" url="http://localhost">
         <fileTransfer port="0" mountedRoot="C:\Files\Workspace\js-library" accessType="MOUNT" />
       </webServer>
@@ -136,14 +128,6 @@
         <fileTransfer host="crm.bee-food.ru" port="22" rootFolder="/var/www/beefood/data" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
-      <webServer id="4a80e793-a4b0-4316-990e-f0e6aee5aafb" name="Gallery-Stone Main-Host" url="http://gallery-stone.ru">
-        <fileTransfer host="gallery-stone.ru" port="22" rootFolder="/var/www/gstone/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
           </advancedOptions>
           <option name="port" value="22" />
         </fileTransfer>
