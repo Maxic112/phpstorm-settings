@@ -156,14 +156,6 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="fc9ab44e-501b-413d-b216-be8bee44c905" name="Continental (ih-nk.ru)" url="http://ih-nk.ru/">
-        <fileTransfer host="ih-nk.ru" port="22" rootFolder="/var/www/ihnk/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="630b7951-4332-4923-9b9e-9a93a20ae0e8" name="KMB Garant MH" url="http://kbmgarant.ru">
         <fileTransfer host="kbmgarant.ru" port="22" rootFolder="/var/www/kbmg/data" accessType="SFTP">
           <advancedOptions>
