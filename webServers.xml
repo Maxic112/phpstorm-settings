@@ -156,14 +156,6 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="532d40be-ff4e-48bd-b93e-fbaa43feab44" name="almisib.ru" url="http://almisib.ru/">
-        <fileTransfer host="almisib.ru" port="22" rootFolder="/var/www/almisib/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="4a80e793-a4b0-4316-990e-f0e6aee5aafb" name="Gallery-Stone Main-Host" url="http://gallery-stone.ru">
         <fileTransfer host="gallery-stone.ru" port="22" rootFolder="/var/www/gstone/data" accessType="SFTP">
           <advancedOptions>
