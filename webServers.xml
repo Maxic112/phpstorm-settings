@@ -1,6 +1,14 @@
 <application>
   <component name="WebServers">
     <option name="servers">
+      <webServer id="df0e44a6-2b70-435c-9a58-4b9c186f3ff9" name="industria-reestr.ru" url="http://industria-reestr.ru">
+        <fileTransfer host="industria-reestr.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
       <webServer id="9b137861-7f69-4f40-ba28-e5ecef5ee917" name="crm.arkcrm.ru" url="http://crm.arkcrm.ru">
         <fileTransfer host="crm.arkcrm.ru" port="22" rootFolder="/var/www/arkan/data" accessType="SFTP">
           <advancedOptions>
