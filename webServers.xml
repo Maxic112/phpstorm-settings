@@ -124,14 +124,6 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="e0d6cf52-2130-49e2-b4a3-0aa205128290" name="an-1-Line Production" url="http://itinfinity.ru">
-        <fileTransfer host="itinfinity.ru" port="22" rootFolder="/var/www/an1line/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="9676f846-c124-4915-acf6-22d9212f9dbe" name="Etalon Main-Host" url="http://etalon-estate.ru">
         <fileTransfer host="etalon-estate.ru" port="22" rootFolder="/var/www/etalon/data" accessType="SFTP">
           <advancedOptions>
