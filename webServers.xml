@@ -1,6 +1,14 @@
 <application>
   <component name="WebServers">
     <option name="servers">
+      <webServer id="0a136441-664c-4b23-87f0-934a17ff50a4" name="itinfinity.ru" url="http://itinfinity.ru">
+        <fileTransfer host="itinfinity.ru" port="22" rootFolder="/var/www/infinity/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
       <webServer id="9b137861-7f69-4f40-ba28-e5ecef5ee917" name="crm.arkcrm.ru" url="http://crm.arkcrm.ru">
         <fileTransfer host="crm.arkcrm.ru" port="22" rootFolder="/var/www/arkan/data" accessType="SFTP">
           <advancedOptions>
@@ -68,40 +76,8 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="b8e45e27-8735-4a0b-abd6-81ca3c5b05a6" name="Beefood site Dev" url="http://beefood.its2dev.ru">
-        <fileTransfer host="beefood.its2dev.ru" port="22" rootFolder="/var/www/beefood/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
-      <webServer id="5b570985-ab0a-4d61-9081-c7817729c985" name="Beefood Site Dev" url="http://beefood.its2dev.ru/">
-        <fileTransfer host="beefood.its2dev.ru" port="22" rootFolder="/var/www/bf2dev/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="44264e8f-556d-42dd-b35c-25427dd70471" name="Lgorod CRM" url="http://lgportal.its2dev.ru">
         <fileTransfer host="lgportal.its2dev.ru" port="22" rootFolder="/var/www/lgportal/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
-      <webServer id="784ce338-8317-4c60-b1fe-54eb284afd69" name="Beefood CRM  Main-Host" url="http://crm.bee-food.ru">
-        <fileTransfer host="crm.bee-food.ru" port="22" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
-      <webServer id="3ceab5c2-076b-4686-b887-9ac713cadeec" name="Beefood Main-Host 2" url="http://crm.bee-food.ru">
-        <fileTransfer host="crm.bee-food.ru" port="22" rootFolder="/var/www/beefood/data" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
