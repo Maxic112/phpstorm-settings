@@ -124,14 +124,6 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="3dbed45a-54b4-41e4-88c0-c69471f73ba5" name="Industria reestr Wac Cabinet" url="http://213.171.52.218">
-        <fileTransfer host="213.171.52.218" port="222" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
-          </advancedOptions>
-          <option name="port" value="222" />
-        </fileTransfer>
-      </webServer>
       <webServer id="f63ae5ce-c4c3-43e8-910a-bcb3c4d79b98" name="waf.zao-srk.ru" url="http://waf.zao-srk.ru">
         <fileTransfer host="waf.zao-srk.ru" port="22" rootFolder="/var/www/www-root/data" accessType="SFTP">
           <advancedOptions>
