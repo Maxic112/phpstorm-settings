@@ -116,14 +116,6 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="9676f846-c124-4915-acf6-22d9212f9dbe" name="Etalon Main-Host" url="http://etalon-estate.ru">
-        <fileTransfer host="etalon-estate.ru" port="22" rootFolder="/var/www/etalon/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="44264e8f-556d-42dd-b35c-25427dd70471" name="Lgorod CRM" url="http://lgportal.its2dev.ru">
         <fileTransfer host="lgportal.its2dev.ru" port="22" rootFolder="/var/www/lgportal/data" accessType="SFTP">
           <advancedOptions>
