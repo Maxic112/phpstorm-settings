@@ -76,14 +76,6 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="8b15184f-1429-493a-a3c7-f6e1ee3328bb" name="Kompas Main-Host" url="http://pro-kompas.info">
-        <fileTransfer host="pro-kompas.info" port="22" rootFolder="/var/www/kompas/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="e41f2780-6ffe-4432-a8f7-8e1d0d0bb8ba" name="ZAO-SRK Main-Host" url="http://zao-srk.ru">
         <fileTransfer host="zao-srk.ru" port="22" rootFolder="/var/www/www-root/data" accessType="SFTP">
           <advancedOptions>
