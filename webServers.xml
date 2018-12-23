@@ -100,14 +100,6 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
-      <webServer id="e41f2780-6ffe-4432-a8f7-8e1d0d0bb8ba" name="ZAO-SRK Main-Host" url="http://zao-srk.ru">
-        <fileTransfer host="zao-srk.ru" port="22" rootFolder="/var/www/www-root/data" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="b8e45e27-8735-4a0b-abd6-81ca3c5b05a6" name="Beefood site Dev" url="http://beefood.its2dev.ru">
         <fileTransfer host="beefood.its2dev.ru" port="22" rootFolder="/var/www/beefood/data" accessType="SFTP">
           <advancedOptions>
