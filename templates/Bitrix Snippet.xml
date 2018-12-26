@@ -14,7 +14,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snbxApiSingleAction" value="&#10;//Подключаем API битрикса&#10;require($_SERVER[&quot;DOCUMENT_ROOT&quot;] . &quot;/bitrix/modules/main/include/prolog_before.php&quot;);&#10;&#10;//Заголовки&#10;header('Cache-Control: no-cache, no-store, must-revalidate'); //Отключает кэширование&#10;header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); //Дата и время после которой ответ считается устаревшим&#10;header('Content-type: application/json'); // Тип возвращаемого контекта&#10;&#10;//Отключаем статистику Bitrix&#10;define(&quot;NO_KEEP_STATISTIC&quot;, true);&#10;define(&quot;NOT_CHECK_PERMISSIONS&quot;, true);&#10;&#10;$dataResult =  [&#10;&#9;'error' =&gt; false,&#10;&#9;'error_msg' =&gt; '',&#10;&#9;'result' =&gt; '',&#10;];&#10;&#10;try {&#10;&#10;//&#9;Основной испольняемый код api&#10;//&#9;CModule::IncludeModule('iblock');&#10;&#10;} catch (Exception $e) {&#10;&#9;//Обработка ошибок&#10;&#9;$dataResult['error'] = true;&#10;&#9;$dataResult['error_msg'] = $e-&gt;getMessage();&#10;}&#10;&#10;//Отправка (вывод) ответа на frontend&#10;echo json_encode($dataResult,JSON_UNESCAPED_UNICODE);" description="Bitrix API Template" toReformat="false" toShortenFQNames="true">
+  <template name="snbxApiSingleAction" value="&#10;//Подключаем API битрикса&#10;require($_SERVER[&quot;DOCUMENT_ROOT&quot;] . &quot;/bitrix/modules/main/include/prolog_before.php&quot;);&#10;&#10;//Заголовки&#10;header('Cache-Control: no-cache, no-store, must-revalidate'); //Отключает кэширование&#10;header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); //Дата и время после которой ответ считается устаревшим&#10;header('Content-type: application/json'); // Тип возвращаемого контекта&#10;&#10;//Отключаем статистику Bitrix&#10;define(&quot;NO_KEEP_STATISTIC&quot;, true);&#10;define(&quot;NOT_CHECK_PERMISSIONS&quot;, true);&#10;&#10;$dataResult =  [&#10;&#9;'error' =&gt; false,&#10;&#9;'error_msg' =&gt; '',&#10;&#9;'result' =&gt; '',&#10;];&#10;&#10;try {&#10;&#10;//&#9;Основной испольняемый код api&#10;&#10;} catch (Exception $e) {&#10;&#9;//Обработка ошибок&#10;&#9;$dataResult['error'] = true;&#10;&#9;$dataResult['error_msg'] = $e-&gt;getMessage();&#10;}&#10;&#10;//Отправка (вывод) ответа на frontend&#10;echo json_encode($dataResult,JSON_UNESCAPED_UNICODE);" description="Bitrix API Template" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
@@ -24,7 +24,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snbxApiAction" value="if(!defined(&quot;B_PROLOG_INCLUDED&quot;) || B_PROLOG_INCLUDED!==true)die();&#10;&#10;$END$&#10;&#10;$dataResult['result'] = '';" description="Bitrix API Action Template" toReformat="false" toShortenFQNames="true">
+  <template name="snbxApiAction" value="if(!defined(&quot;B_PROLOG_INCLUDED&quot;) || B_PROLOG_INCLUDED!==true)die();&#10;&#10;$fields = $_POST;&#10;&#10;if (&#10;&#9;empty($fields[''])&#10;) {&#10;&#9;throw new Exception('Не переданы параметры');&#10;}&#10;&#10;$dataResult['result'] = '';" description="Bitrix API Action Template" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
@@ -44,7 +44,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="snbxCIBlockSectionAdd" value="CModule::IncludeModule('iblock');&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false,&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; '',&#10;];&#10;$newSection = new CIBlockSection();&#10;$addSectionResult = $newSection-&gt;Add($arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblocksection/add.php&#10;if (!$addSectionResult) {&#10;&#9;throw new Exception('Ошибка при создании раздела. ' . $newSection-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockSection:Add" toReformat="false" toShortenFQNames="true">
+  <template name="snbxCIBlockSectionAdd" value="CModule::IncludeModule('iblock');&#10;$arFields = [&#10;&#9;'ACTIVE' =&gt; 'Y',&#10;&#9;'IBLOCK_SECTION_ID' =&gt; false, //Будет лежать в корне&#10;&#9;'IBLOCK_ID' =&gt; 0,&#10;&#9;'NAME' =&gt; '',&#10;];&#10;$newSection = new CIBlockSection();&#10;$addSectionResult = $newSection-&gt;Add($arFields); //https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblocksection/add.php&#10;if (!$addSectionResult) {&#10;&#9;throw new Exception('Ошибка при создании раздела. ' . $newSection-&gt;LAST_ERROR);&#10;}" description="Bitrix CIBlockSection:Add" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
@@ -78,6 +78,17 @@
   </template>
   <template name="snbxIncludeComponent" value="$APPLICATION-&gt;IncludeComponent('$END$','', Array (), false);" description="Bitrix Include Component Function" toReformat="false" toShortenFQNames="true">
     <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxIsAdmin" value="if ($USER-&gt;IsAdmin()) {&#10;    $END$&#10;}" description="Bitrix Conditional &quot;Is Admin&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="snbxIsAdminTags" value="&lt;? if ($USER-&gt;IsAdmin()): ?&gt;&#10;    $END$&#10;&lt;? endif; ?&gt;" description="Bitrix Conditional &quot;Is Admin&quot;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
       <option name="PHP" value="true" />
     </context>
   </template>
