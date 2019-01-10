@@ -92,6 +92,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="d7ae93ab-6e04-4e29-ab3a-0c762d9c5fbc" name="coffeecollectivebrewbar.com" url="http://coffeecollectivebrewbar.com">
+        <fileTransfer host="coffeecollectivebrewbar.com" port="22" rootFolder="/var/www/coffeec/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
