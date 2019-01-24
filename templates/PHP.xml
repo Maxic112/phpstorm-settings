@@ -1,0 +1,7 @@
+<templateSet group="PHP">
+  <template name="snCurlSend" value="function CurlSend ($url, $arParams, $method = 'post') {&#10;&#9;$ch = curl_init();&#10;&#9;$getParams = '';&#10;&#9;if ($method === 'post') {&#10;&#9;&#9;curl_setopt($ch, CURLOPT_POST, true); //Тип запроса POST&#10;&#9;&#9;curl_setopt($ch, CURLOPT_POSTFIELDS, $arParams); //Параметры POST запроса&#10;&#9;} else if ($method === 'get') {&#10;&#9;&#9;$getParams = '&amp;' . http_build_query($arParams);&#10;&#9;}&#10;&#9;curl_setopt($ch, CURLOPT_URL, $url . $getParams);&#10;&#9;curl_setopt($ch, CURLOPT_HEADER, false); //Убрать заголовки из вывода ответа&#10;&#9;curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Возврат результата в строкой, а не в браузер&#10;&#9;$requestResult = curl_exec($ch);&#10;&#9;$dataResult = json_decode($requestResult);&#10;&#9;return $requestResult;&#10;}" description="CurlSend Function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

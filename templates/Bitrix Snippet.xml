@@ -92,4 +92,14 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="stp" value="&lt;?=SITE_TEMPLATE_PATH?&gt;$END$" description="SITE_TEMPLATE_PATH - html const snippet" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="STP" value="SITE_TEMPLATE_PATH$END$" description="SITE_TEMPLATE_PATH - php const snippet" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
