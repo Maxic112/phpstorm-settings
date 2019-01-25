@@ -102,4 +102,9 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="snbxAddCssAfterAll" value="&lt;?Asset::getInstance()-&gt;addString( '&lt;link href=&quot;'.SITE_TEMPLATE_PATH.'/css/media.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;&gt;', true, 'AFTER_CSS' );?&gt;" description="Bitrix Add Css after all" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
