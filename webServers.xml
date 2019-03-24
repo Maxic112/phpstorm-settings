@@ -199,7 +199,15 @@
       <webServer id="d7ae93ab-6e04-4e29-ab3a-0c762d9c5fbc" name="coffeecollectivebrewbar.com" url="http://coffeecollectivebrewbar.com">
         <fileTransfer host="coffeecollectivebrewbar.com" port="22" rootFolder="/var/www/coffeec/data" accessType="SFTP">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="7d43250e-28fe-47cd-849a-6c363ea75619" name="aztek-nk.ru" url="http://aztek-nk.ru">
+        <fileTransfer host="aztek-nk.ru" port="22" rootFolder="/home/a/azteknkru" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
           <option name="port" value="22" />
         </fileTransfer>
