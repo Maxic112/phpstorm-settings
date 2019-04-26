@@ -10,5 +10,6 @@
     <ignoreAction name="Language Injection/Un-inject Language/Reference" />
     <ignoreAction name="CoffeeScript/Replace Double-Quoted String with Single-Quoted String" />
     <ignoreAction name="JavaScript/Other/Replace Single-Quoted String with Double-Quoted String" />
+    <ignoreAction name="PHP/Flip binary expression" />
   </component>
 </application>
