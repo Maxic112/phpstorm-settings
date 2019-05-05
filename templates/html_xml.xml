@@ -18,7 +18,6 @@
       <option name="JAVA_STRING" value="false" />
       <option name="JSP" value="false" />
       <option name="XML" value="true" />
-      <option name="XSL_TEXT" value="true" />
     </context>
   </template>
 </templateSet>
