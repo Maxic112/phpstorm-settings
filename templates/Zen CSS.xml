@@ -1,0 +1,5 @@
+<templateSet group="Zen CSS">
+  <template name="ff:s" value="font-family: '$END$', sans-serif;" description="font-family:  'some-font', sans-serif;" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+</templateSet>
