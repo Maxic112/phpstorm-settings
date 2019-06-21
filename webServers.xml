@@ -220,6 +220,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="e9b2b851-5162-461a-86ee-8c99759b6995" name="кузковка.рф" url="http://46.254.16.4">
+        <fileTransfer host="46.254.16.4" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
