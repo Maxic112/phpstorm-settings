@@ -1,0 +1,9 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="11">
+      <action id="SurroundWith" />
+      <typing text-keycode="69:0;80:0">ep</typing>
+      <shortuct text="ENTER" />
+    </macro>
+  </component>
+</application>
