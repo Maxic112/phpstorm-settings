@@ -236,6 +236,17 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="cad704df-c447-4c5d-b8b9-cf5dca3185e7" name="encoal.ru" url="http://encoal.ru/">
+        <fileTransfer port="0" mountedRoot="D:\encoal" accessType="MOUNT" />
+      </webServer>
+      <webServer id="8d7e1258-846e-4eb9-bacc-2a58ae7b569c" name="encoal.ru" url="http://encoal.ru">
+        <fileTransfer host="encoal.ru" port="22" rootFolder="/var/www/encoal/data" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
