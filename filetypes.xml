@@ -3,8 +3,10 @@
     <extensionMap>
       <mapping pattern="epipro-script" type="JavaScript" />
       <mapping pattern=".htpasswd" type="PLAIN_TEXT" />
+      <mapping pattern="general-elements" type="PLAIN_TEXT" />
       <mapping pattern="index" type="PLAIN_TEXT" />
       <mapping pattern=".bash_history" type="PLAIN_TEXT" />
+      <mapping pattern="default-reset" type="PLAIN_TEXT" />
       <mapping ext="bak" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
