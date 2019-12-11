@@ -5,6 +5,7 @@
       <mapping pattern=".htpasswd" type="PLAIN_TEXT" />
       <mapping pattern="general-elements" type="PLAIN_TEXT" />
       <mapping pattern="index" type="PLAIN_TEXT" />
+      <mapping pattern="additional-education" type="PLAIN_TEXT" />
       <mapping pattern=".bash_history" type="PLAIN_TEXT" />
       <mapping pattern="default-reset" type="PLAIN_TEXT" />
       <mapping ext="bak" type="PLAIN_TEXT" />
