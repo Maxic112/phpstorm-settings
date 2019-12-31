@@ -1,9 +1,10 @@
 <application>
   <component name="ActionMacroManager">
-    <macro name="11">
-      <action id="SurroundWith" />
-      <typing text-keycode="69:0;80:0">ep</typing>
-      <shortuct text="ENTER" />
+    <macro name="br add">
+      <action id="EditorLineEnd" />
+      <typing text-keycode="44:1;66:0;82:0;46:1">&lt;br&gt;</typing>
+      <action id="EditorLineStart" />
+      <action id="EditorDown" />
     </macro>
   </component>
 </application>
