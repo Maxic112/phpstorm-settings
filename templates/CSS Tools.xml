@@ -28,4 +28,9 @@
       <option name="CSS" value="true" />
     </context>
   </template>
+  <template name="snTableBase" value="width: 100%;&#10;border-collapse: collapse;&#10;border: 1px solid black;&#10;$END$" description="Base Property for Table" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
 </templateSet>
