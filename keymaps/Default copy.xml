@@ -1,4 +1,7 @@
 <keymap version="1" name="Default copy" parent="$default">
+  <action id="Macro.time copy">
+    <keyboard-shortcut first-keystroke="ctrl numpad1" />
+  </action>
   <action id="PlaybackLastMacro">
     <keyboard-shortcut first-keystroke="ctrl alt slash" />
   </action>
