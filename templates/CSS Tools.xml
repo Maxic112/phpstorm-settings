@@ -33,4 +33,12 @@
       <option name="CSS" value="true" />
     </context>
   </template>
+  <template name="bgim" value="background-image: url('$END$');&#10;background-position: $position$;&#10;background-size: $size$;&#10;background-repeat: $repeat$;" description="background-image Template" toReformat="false" toShortenFQNames="true">
+    <variable name="position" expression="" defaultValue="center" alwaysStopAt="true" />
+    <variable name="size" expression="" defaultValue="100%" alwaysStopAt="true" />
+    <variable name="repeat" expression="" defaultValue="no-repeat" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
 </templateSet>
