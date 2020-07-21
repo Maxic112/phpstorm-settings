@@ -10,6 +10,7 @@
       <mapping pattern="additional-education" type="PLAIN_TEXT" />
       <mapping pattern=".bash_history" type="PLAIN_TEXT" />
       <mapping pattern="default-reset" type="PLAIN_TEXT" />
+      <mapping pattern="fabri-new" type="PLAIN_TEXT" />
       <mapping ext="bak" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
