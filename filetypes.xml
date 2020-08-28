@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="epipro-script" type="JavaScript" />
+      <mapping pattern="TelegramService.js" type="JavaScript" />
       <mapping pattern="TgUser" type="JavaScript" />
       <mapping pattern="_tetanus-main" type="PLAIN_TEXT" />
       <mapping pattern=".htpasswd" type="PLAIN_TEXT" />
