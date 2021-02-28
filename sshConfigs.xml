@@ -1,0 +1,66 @@
+<application>
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="crm.arkcrm.ru" id="32b5e98e-b9a1-4ab3-9795-29518a51143c" port="22" customName="crm.arkcrm.ru" nameFormat="CUSTOM">
+        <option name="customName" value="crm.arkcrm.ru" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="lgorod.its2dev.ru" id="c4739a1b-f24c-47d4-8675-94d47807ab56" port="22" customName="New Love-City" nameFormat="CUSTOM">
+        <option name="customName" value="New Love-City" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="itinfinity.ru" id="6ff03928-a6ef-4c7c-8870-8f5b713aee20" port="22" customName="New IT-INFINITY" nameFormat="CUSTOM">
+        <option name="customName" value="New IT-INFINITY" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="lgorod.com" id="b0312258-0752-4b77-b24b-d7252a850b5c" port="22" customName="Love-City Main Host" nameFormat="CUSTOM">
+        <option name="customName" value="Love-City Main Host" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="lgorod-nk.ru" id="0a104d55-1962-4d20-aefc-60bb5d2b9d99" port="22" customName="Love-City Main Host (1)" nameFormat="CUSTOM">
+        <option name="customName" value="Love-City Main Host (1)" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="kompas.its2dev.ru" id="19bdabba-013d-4891-828b-de493d13ebd6" port="22" customName="Kompas Dev" nameFormat="CUSTOM">
+        <option name="customName" value="Kompas Dev" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="pro-kompas.info" id="6ee92397-691b-4bec-9e2a-6accf0f0a12f" port="22" customName="Kompas Main-Host" nameFormat="CUSTOM">
+        <option name="customName" value="Kompas Main-Host" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="beefood.its2dev.ru" id="61c5a0f2-3373-4782-aaed-2bd96f927486" port="22" customName="Beefood site Dev" nameFormat="CUSTOM">
+        <option name="customName" value="Beefood site Dev" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="bee-food.ru" id="dac9595f-f800-41ab-97a0-fed43e9dc81c" port="22" customName="Beefood Site Main-Host" nameFormat="CUSTOM">
+        <option name="customName" value="Beefood Site Main-Host" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="etalon-estate.ru" id="f4c76178-65fc-4986-aa55-4860bbf45ca6" port="22" customName="Etalon Main-Host" nameFormat="CUSTOM">
+        <option name="customName" value="Etalon Main-Host" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="lgportal.its2dev.ru" id="af9e49c9-8c62-479d-9f73-85e60453f513" port="22" customName="Lgorod CRM" nameFormat="CUSTOM">
+        <option name="customName" value="Lgorod CRM" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="crm.bee-food.ru" id="3872ad50-1e78-467a-8eef-d321cbebffca" port="22" customName="Beefood CRM  Main-Host" nameFormat="CUSTOM">
+        <option name="customName" value="Beefood CRM  Main-Host" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="almisib.ru" id="ba1a7dab-f738-4d0d-b273-bc682ed608d2" port="22" customName="Almisib.ru" nameFormat="CUSTOM">
+        <option name="customName" value="Almisib.ru" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="gallery-stone.ru" id="120992e5-9f60-4fff-b2d3-5e0150a8b456" port="22" customName="Gallery-Stone Main-Host" nameFormat="CUSTOM">
+        <option name="customName" value="Gallery-Stone Main-Host" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="ih-nk.ru" id="53de19de-4cdd-499e-92f1-32cc42f00af0" port="22" customName="Continental (ih-nk.ru)" nameFormat="CUSTOM">
+        <option name="customName" value="Continental (ih-nk.ru)" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="kbmgarant.ru" id="767e4939-57c6-462e-b61c-c2e7780e3d0b" port="22" customName="KMB Garant MH" nameFormat="CUSTOM">
+        <option name="customName" value="KMB Garant MH" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="coffeecollectivebrewbar.com" id="9f99895f-507e-4478-becf-2f9b49946a23" port="22" customName="coffeecollectivebrewbar.com" nameFormat="CUSTOM">
+        <option name="customName" value="coffeecollectivebrewbar.com" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="aztek-nk.ru" id="fed153fa-88ec-4f91-9b8c-bcf3403473f1" port="22" customName="aztek-nk.ru" nameFormat="CUSTOM">
+        <option name="customName" value="aztek-nk.ru" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="encoal.ru" id="7260803f-ab45-4289-a58b-4af954459d93" port="22" customName="encoal.ru" nameFormat="CUSTOM">
+        <option name="customName" value="encoal.ru" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="192.168.163.203" id="1e23f969-f0cf-4ba9-91d2-e80a7ac32908" port="22" customName="192.168.163.203" nameFormat="CUSTOM">
+        <option name="customName" value="192.168.163.203" />
+      </sshConfig>
+    </configs>
+  </component>
+</application>
