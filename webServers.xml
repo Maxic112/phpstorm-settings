@@ -2,19 +2,17 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="9b137861-7f69-4f40-ba28-e5ecef5ee917" name="crm.arkcrm.ru" url="http://crm.arkcrm.ru">
-        <fileTransfer host="crm.arkcrm.ru" port="22" rootFolder="/var/www/arkan/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/arkan/data" accessType="SFTP" host="crm.arkcrm.ru" port="22" sshConfigId="32b5e98e-b9a1-4ab3-9795-29518a51143c" sshConfig="crm.arkcrm.ru">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="43f06572-93cb-461f-ad64-b542d2e35c9f" name="New Love-City" url="http://lgorod.its2dev.ru">
-        <fileTransfer host="lgorod.its2dev.ru" port="22" rootFolder="/var/www/lg2dev/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/lg2dev/data" accessType="SFTP" host="lgorod.its2dev.ru" port="22" sshConfigId="c4739a1b-f24c-47d4-8675-94d47807ab56" sshConfig="New Love-City">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="e7f426e9-bf88-4643-b73d-bc327ffaa629" name="it-infinity-server" url="http://www.it-infinity.ru/">
@@ -22,23 +20,20 @@
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
       <webServer id="3767bf24-a699-49de-b5a1-e216344e5992" name="love-city" url="http://it-infinity.ru">
-        <fileTransfer host="it-infinity.ru" port="21" rootFolder="/www/lgorod.it-infinity.ru">
+        <fileTransfer rootFolder="/www/lgorod.it-infinity.ru" host="it-infinity.ru" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
       <webServer id="29ed656e-b44e-4634-ba97-45bfe9042eb7" name="Gallery of Stone" url="http://gallery.it-infinity.ru">
-        <fileTransfer host="gallery.it-infinity.ru" port="21" rootFolder="/www/gallery.it-infinity.ru">
+        <fileTransfer rootFolder="/www/gallery.it-infinity.ru" host="gallery.it-infinity.ru" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
       <webServer id="0cfb362c-cae6-4261-8eb0-e6f0d3356187" name="gallery-stone.ru" url="http://gallery-stone.ru">
@@ -46,178 +41,156 @@
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
       <webServer id="373f738d-45af-4f69-a13d-f9ec1ba47a8e" name="js-library" url="http://localhost">
-        <fileTransfer port="0" mountedRoot="C:\Files\Workspace\js-library" accessType="MOUNT" />
+        <fileTransfer mountedRoot="C:\Files\Workspace\js-library" accessType="MOUNT" port="0" />
       </webServer>
       <webServer id="0a136441-664c-4b23-87f0-934a17ff50a4" name="New IT-INFINITY" url="http://itinfinity.ru">
-        <fileTransfer host="itinfinity.ru" port="22" rootFolder="/var/www/infinity/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/infinity/data" accessType="SFTP" host="itinfinity.ru" port="22" sshConfigId="6ff03928-a6ef-4c7c-8870-8f5b713aee20" sshConfig="New IT-INFINITY">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="e02dcb88-afd7-4b0b-af45-93197dca49b7" name="Love-City Main Host" url="http://lgorod-nk.ru/">
-        <fileTransfer host="lgorod.com" port="22" rootFolder="/var/www/lgorod/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/lgorod/data" accessType="SFTP" host="lgorod.com" port="22" sshConfigId="b0312258-0752-4b77-b24b-d7252a850b5c" sshConfig="Love-City Main Host">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="c75ed228-5038-49b0-92ee-7d525c7a2a87" name="Love-City Main Host (1)" url="http://lgorod-nk.ru/">
-        <fileTransfer host="lgorod-nk.ru" port="22" rootFolder="/var/www/lgorod/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/lgorod/data" accessType="SFTP" host="lgorod-nk.ru" port="22" sshConfigId="0a104d55-1962-4d20-aefc-60bb5d2b9d99" sshConfig="Love-City Main Host (1)">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="2fbcd729-a84d-473f-80d4-5523aebeb8c2" name="Kompas Dev" url="http://kompas.its2dev.ru">
-        <fileTransfer host="kompas.its2dev.ru" port="22" rootFolder="/var/www/kmp2dev/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/kmp2dev/data" accessType="SFTP" host="kompas.its2dev.ru" port="22" sshConfigId="19bdabba-013d-4891-828b-de493d13ebd6" sshConfig="Kompas Dev">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="8b15184f-1429-493a-a3c7-f6e1ee3328bb" name="Kompas Main-Host" url="http://pro-kompas.info">
-        <fileTransfer host="pro-kompas.info" port="22" rootFolder="/var/www/kompas/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/kompas/data" accessType="SFTP" host="pro-kompas.info" port="22" sshConfigId="6ee92397-691b-4bec-9e2a-6accf0f0a12f" sshConfig="Kompas Main-Host">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="42586407-88c8-4314-9eac-1e7127458217" name="industria-reestr.ru Main-Host" url="http://217.112.33.101">
-        <fileTransfer host="217.112.33.101" port="21" rootFolder="/htdocs">
+        <fileTransfer rootFolder="/htdocs" host="217.112.33.101" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
       <webServer id="b8e45e27-8735-4a0b-abd6-81ca3c5b05a6" name="Beefood site Dev" url="http://beefood.its2dev.ru">
-        <fileTransfer host="beefood.its2dev.ru" port="22" rootFolder="/var/www/beefood/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/beefood/data" accessType="SFTP" host="beefood.its2dev.ru" port="22" sshConfigId="61c5a0f2-3373-4782-aaed-2bd96f927486" sshConfig="Beefood site Dev">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="5b570985-ab0a-4d61-9081-c7817729c985" name="Beefood Site Dev" url="http://beefood.its2dev.ru/">
-        <fileTransfer host="beefood.its2dev.ru" port="22" rootFolder="/var/www/bf2dev/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/bf2dev/data" accessType="SFTP" host="beefood.its2dev.ru" port="22" sshConfigId="61c5a0f2-3373-4782-aaed-2bd96f927486" sshConfig="Beefood site Dev">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="00e0eecb-81a1-44d6-abc7-bb7bd00ce3ca" name="Beefood Site Main-Host" url="http://bee-food.ru">
-        <fileTransfer host="bee-food.ru" port="22" rootFolder="/var/www/beefood/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/beefood/data" accessType="SFTP" host="bee-food.ru" port="22" sshConfigId="dac9595f-f800-41ab-97a0-fed43e9dc81c" sshConfig="Beefood Site Main-Host">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="e0d6cf52-2130-49e2-b4a3-0aa205128290" name="an-1-Line Production" url="http://itinfinity.ru">
-        <fileTransfer host="itinfinity.ru" port="22" rootFolder="/var/www/an1line/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/an1line/data" accessType="SFTP" host="itinfinity.ru" port="22" sshConfigId="6ff03928-a6ef-4c7c-8870-8f5b713aee20" sshConfig="New IT-INFINITY">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="9676f846-c124-4915-acf6-22d9212f9dbe" name="Etalon Main-Host" url="http://etalon-estate.ru">
-        <fileTransfer host="etalon-estate.ru" port="22" rootFolder="/home/bitrix/ext_www/etalon-estate.ru" accessType="SFTP">
+        <fileTransfer rootFolder="/home/bitrix/ext_www/etalon-estate.ru" accessType="SFTP" host="etalon-estate.ru" port="22" sshConfigId="f4c76178-65fc-4986-aa55-4860bbf45ca6" sshConfig="Etalon Main-Host">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="44264e8f-556d-42dd-b35c-25427dd70471" name="Lgorod CRM" url="http://lgportal.its2dev.ru">
-        <fileTransfer host="lgportal.its2dev.ru" port="22" rootFolder="/var/www/lgportal/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/lgportal/data" accessType="SFTP" host="lgportal.its2dev.ru" port="22" sshConfigId="af9e49c9-8c62-479d-9f73-85e60453f513" sshConfig="Lgorod CRM">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="784ce338-8317-4c60-b1fe-54eb284afd69" name="Beefood CRM  Main-Host" url="http://crm.bee-food.ru">
-        <fileTransfer host="crm.bee-food.ru" port="22" accessType="SFTP">
+        <fileTransfer accessType="SFTP" host="crm.bee-food.ru" port="22" sshConfigId="3872ad50-1e78-467a-8eef-d321cbebffca" sshConfig="Beefood CRM  Main-Host">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="3ceab5c2-076b-4686-b887-9ac713cadeec" name="Beefood Main-Host 2" url="http://crm.bee-food.ru">
-        <fileTransfer host="crm.bee-food.ru" port="22" rootFolder="/var/www/beefood/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/beefood/data" accessType="SFTP" host="crm.bee-food.ru" port="22" sshConfigId="3872ad50-1e78-467a-8eef-d321cbebffca" sshConfig="Beefood CRM  Main-Host">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="532d40be-ff4e-48bd-b93e-fbaa43feab44" name="Almisib.ru" url="http://almisib.ru/">
-        <fileTransfer host="almisib.ru" port="22" rootFolder="/var/www/almisib/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/almisib/data" accessType="SFTP" host="almisib.ru" port="22" sshConfigId="ba1a7dab-f738-4d0d-b273-bc682ed608d2" sshConfig="Almisib.ru">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="4a80e793-a4b0-4316-990e-f0e6aee5aafb" name="Gallery-Stone Main-Host" url="http://gallery-stone.ru">
-        <fileTransfer host="gallery-stone.ru" port="22" rootFolder="/var/www/gstone/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/gstone/data" accessType="SFTP" host="gallery-stone.ru" port="22" sshConfigId="120992e5-9f60-4fff-b2d3-5e0150a8b456" sshConfig="Gallery-Stone Main-Host">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="fc9ab44e-501b-413d-b216-be8bee44c905" name="Continental (ih-nk.ru)" url="http://ih-nk.ru/">
-        <fileTransfer host="ih-nk.ru" port="22" rootFolder="/var/www/ihnk/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/ihnk/data" accessType="SFTP" host="ih-nk.ru" port="22" sshConfigId="53de19de-4cdd-499e-92f1-32cc42f00af0" sshConfig="Continental (ih-nk.ru)">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="630b7951-4332-4923-9b9e-9a93a20ae0e8" name="KMB Garant MH" url="http://kbmgarant.ru">
-        <fileTransfer host="kbmgarant.ru" port="22" rootFolder="/var/www/kbmg/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/kbmg/data" accessType="SFTP" host="kbmgarant.ru" port="22" sshConfigId="767e4939-57c6-462e-b61c-c2e7780e3d0b" sshConfig="KMB Garant MH">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="d7ae93ab-6e04-4e29-ab3a-0c762d9c5fbc" name="coffeecollectivebrewbar.com" url="http://coffeecollectivebrewbar.com">
-        <fileTransfer host="coffeecollectivebrewbar.com" port="22" rootFolder="/var/www/coffeec/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/coffeec/data" accessType="SFTP" host="coffeecollectivebrewbar.com" port="22" sshConfigId="9f99895f-507e-4478-becf-2f9b49946a23" sshConfig="coffeecollectivebrewbar.com">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="7d43250e-28fe-47cd-849a-6c363ea75619" name="aztek-nk.ru" url="http://aztek-nk.ru">
-        <fileTransfer host="aztek-nk.ru" port="22" rootFolder="/home/a/azteknkru" accessType="SFTP">
+        <fileTransfer rootFolder="/home/a/azteknkru" accessType="SFTP" host="aztek-nk.ru" port="22" sshConfigId="fed153fa-88ec-4f91-9b8c-bcf3403473f1" sshConfig="aztek-nk.ru">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="b6b66a9a-52dc-4d9c-8e43-e46762ab4f30" name="encoal.ru" url="http://encoal.ru">
-        <fileTransfer host="encoal.ru" port="22" rootFolder="/var/www/encoal/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/encoal/data" accessType="SFTP" host="encoal.ru" port="22" sshConfigId="7260803f-ab45-4289-a58b-4af954459d93" sshConfig="encoal.ru">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="e9b2b851-5162-461a-86ee-8c99759b6995" name="кузковка.рф" url="http://46.254.16.4">
@@ -225,7 +198,6 @@
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
       <webServer id="b56c7c01-5c72-449a-b5aa-7d811f02859e" name="belan" url="http://46.254.16.4">
@@ -233,30 +205,27 @@
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
       <webServer id="cad704df-c447-4c5d-b8b9-cf5dca3185e7" name="encoal.ru (1)" url="http://encoal.ru/">
-        <fileTransfer port="0" mountedRoot="D:\encoal" accessType="MOUNT" />
+        <fileTransfer mountedRoot="D:\encoal" accessType="MOUNT" port="0" />
       </webServer>
       <webServer id="8d7e1258-846e-4eb9-bacc-2a58ae7b569c" name="encoal.ru (2)" url="http://encoal.ru">
-        <fileTransfer host="encoal.ru" port="22" rootFolder="/var/www/encoal/data" accessType="SFTP">
+        <fileTransfer rootFolder="/var/www/encoal/data" accessType="SFTP" host="encoal.ru" port="22" sshConfigId="7260803f-ab45-4289-a58b-4af954459d93" sshConfig="encoal.ru">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="756018cc-b82e-4d8f-b18d-991d46b418b4" name="192.168.163.203" url="http://192.168.163.203">
-        <fileTransfer host="192.168.163.203" port="22" accessType="SFTP">
+        <fileTransfer accessType="SFTP" host="192.168.163.203" port="22" sshConfigId="1e23f969-f0cf-4ba9-91d2-e80a7ac32908" sshConfig="192.168.163.203">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
       <webServer id="29b55d18-f5f7-4efd-b94a-2fb8f9342d12" name="logger" url="http://localhost">
-        <fileTransfer port="0" accessType="LOCAL" />
+        <fileTransfer accessType="LOCAL" port="0" />
       </webServer>
     </option>
   </component>

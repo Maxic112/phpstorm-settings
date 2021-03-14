@@ -61,6 +61,9 @@
       <sshConfig authType="PASSWORD" host="192.168.163.203" id="1e23f969-f0cf-4ba9-91d2-e80a7ac32908" port="22" customName="192.168.163.203" nameFormat="CUSTOM">
         <option name="customName" value="192.168.163.203" />
       </sshConfig>
+      <sshConfig authType="PASSWORD" host="hostru07.fornex.host" id="077da81a-b1af-40e1-9aae-2bc0cc32c0ae" port="20022" customName="coffeecollective.cc SSH" nameFormat="CUSTOM" username="i47388">
+        <option name="customName" value="coffeecollective.cc SSH" />
+      </sshConfig>
     </configs>
   </component>
 </application>
