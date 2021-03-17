@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="18">
     <extensionMap>
+      <mapping pattern="Start" type="AUTO_DETECTED" />
       <mapping pattern="TelegramService.js" type="JavaScript" />
       <mapping pattern="TgUser" type="JavaScript" />
       <mapping pattern="epipro-script" type="JavaScript" />
